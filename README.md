@@ -90,26 +90,7 @@ define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'placement_system');
 
-
-4. Access the Application
-
-Place the cloned repository inside htdocs/ of XAMPP
-
-Open in browser: http://localhost/PlacePro
-
-🧪 Testing Credentials
-
-Admin Login:
-URL: http://localhost/PlacePro/admin
-Username: admin
-Password: admin123
-
-Student Login:
-URL: http://localhost/PlacePro/student
-Username: student
-Password: student123
-
-5.Clonig This Repo
+4. Clonnig This Repo
 
 ```bash
 git clone https://github.com/ThanujMaligi/PlacePro---Placement-Management-Sytem-using-Xampp.git
