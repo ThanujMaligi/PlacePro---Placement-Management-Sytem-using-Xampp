@@ -1,51 +1,115 @@
-📁 Project Structure
+# PlacePro – Placement Management System
 
-The repository is organized into the following directories and files:
+**PlacePro** is a web-based Placement Management System developed using PHP, MySQL, HTML, CSS, and JavaScript on the XAMPP platform.  
+It is designed to automate and streamline the campus placement process for colleges and universities.
 
-admin/: Contains administrative functionalities and views.
+---
 
-css/: Holds stylesheets for the application.
+## 📁 Project Structure
+PlacePro/
+│
+├── admin/ # Admin functionalities and views
+├── css/ # Stylesheets
+├── images/ # Image assets
+├── includes/ # Reusable PHP components and configuration
+├── js/ # JavaScript files
+├── php/ # Backend PHP scripts
+├── sql/ # SQL scripts for database setup
+├── student/ # Student-related functionalities and views
+├── .gitattributes # Git attributes
+├── about.php # About project/organization
+├── forgot.inc.php # Password reset logic
+├── forgot.php # Password reset interface
+├── homestyle.css # Custom homepage styles
+└── index.php # Main entry point of the application
 
-images/: Stores image assets used in the project.
 
-includes/: Contains reusable PHP components and functions.
+---
 
-js/: Holds JavaScript files for client-side interactions.
+## 🛠️ Technologies Used
 
-php/: Contains PHP scripts for backend logic.
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Development Environment:** XAMPP  
 
-sql/: Includes SQL scripts for database setup and management.
+---
 
-student/: Contains student-related functionalities and views.
+## 🚀 Features
 
-.gitattributes: Specifies attributes for pathnames in the repository.
+- **Admin Panel:** Manage companies, students, and placement drives  
+- **Student Dashboard:** View and apply for placement opportunities  
+- **Company Profiles:** Post job openings and track student applications  
+- **Placement Tracking:** Monitor the status of placement drives and student selections  
 
-about.php: Displays information about the project or organization.
+---
 
-forgot.inc.php: Handles password reset logic.
 
-forgot.php: Provides the user interface for password reset.
+---
 
-homestyle.css: Contains custom styles for the homepage.
+## 🛠️ Technologies Used
 
-index.php: The main entry point of the application.
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Development Environment:** XAMPP  
 
-🛠️ Technologies Used
+---
 
-Frontend: HTML, CSS, JavaScript
+## 🚀 Features
 
-Backend: PHP
+- **Admin Panel:** Manage companies, students, placement drives  
+- **Student Dashboard:** View and apply for placement opportunities  
+- **Company Profiles:** Post job openings and track student applications  
+- **Placement Tracking:** Monitor status of placement drives and student selections  
 
-Database: MySQL
+---
 
-Development Environment: XAMPP
+## 📦 Installation Guide
+1. Set Up XAMPP
 
-🚀 Features
+Download and install XAMPP from https://www.apachefriends.org/download.html
 
-Admin Panel: Manage companies, students, and placement drives.
+Start Apache and MySQL services from XAMPP Control Panel
 
-Student Dashboard: View and apply for available placement opportunities.
+2. Configure the Database
 
-Company Profiles: Companies can post job openings and view student applications.
+Open phpMyAdmin: http://localhost/phpmyadmin
 
-Placement Tracking: Monitor the status of placement drives and student selections.
+Create a database named placement_system
+
+Import the SQL file located in sql/ directory to create tables
+
+3. Update Database Credentials
+
+Navigate to includes/config.php
+
+Update database connection parameters:
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'placement_system');
+
+
+4. Access the Application
+
+Place the cloned repository inside htdocs/ of XAMPP
+
+Open in browser: http://localhost/PlacePro
+
+🧪 Testing Credentials
+
+Admin Login:
+URL: http://localhost/PlacePro/admin
+Username: admin
+Password: admin123
+
+Student Login:
+URL: http://localhost/PlacePro/student
+Username: student
+Password: student123
+
+5.Clonig This Repo
+
+```bash
+git clone https://github.com/ThanujMaligi/PlacePro---Placement-Management-Sytem-using-Xampp.git
