@@ -1,0 +1,166 @@
+/* Dark Theme CSS Variables */
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #404040;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #999999;
+  --accent-primary: #95F62F;
+  --accent-secondary: #63A41F;
+  --border-color: #555555;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .navbar {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-theme .navbar .nav-link {
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .navbar .nav-link:hover {
+  color: var(--accent-primary) !important;
+}
+
+body.dark-theme .card {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .form-control {
+  background-color: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .form-control:focus {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(149, 246, 47, 0.25) !important;
+}
+
+body.dark-theme .btn {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .btn:hover {
+  background-color: var(--accent-primary) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--bg-primary) !important;
+}
+
+body.dark-theme .btn-primary {
+  background-color: var(--accent-primary) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--bg-primary) !important;
+}
+
+body.dark-theme .btn-primary:hover {
+  background-color: var(--accent-secondary) !important;
+  border-color: var(--accent-secondary) !important;
+}
+
+body.dark-theme .table {
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .table th {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .table td {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .dropdown-menu {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+body.dark-theme .dropdown-item {
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .dropdown-item:hover {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .badge {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme .badge-dark {
+  background-color: var(--accent-primary) !important;
+  color: var(--bg-primary) !important;
+}
+
+/* Dark theme for specific elements */
+body.dark-theme .design {
+  background: linear-gradient(135deg, #2d2d2d, #404040) !important;
+}
+
+body.dark-theme .wrap {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d) !important;
+}
+
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, 
+body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+  color: var(--text-primary) !important;
+}
+
+body.dark-theme p, body.dark-theme span, body.dark-theme div {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-theme .text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Dark theme for images - add overlay for better contrast */
+body.dark-theme img {
+  opacity: 0.9;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+/* Dark theme for specific page elements */
+body.dark-theme .content {
+  background-color: transparent !important;
+}
+
+body.dark-theme .container {
+  background-color: transparent !important;
+}
+
+/* Dark theme toggle button styling */
+.dark-theme-toggle {
+  background: linear-gradient(45deg, #1a1a1a, #2d2d2d) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  transition: all 0.3s ease !important;
+}
+
+.dark-theme-toggle:hover {
+  background: linear-gradient(45deg, #2d2d2d, #404040) !important;
+  color: var(--accent-primary) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px var(--shadow) !important;
+}
